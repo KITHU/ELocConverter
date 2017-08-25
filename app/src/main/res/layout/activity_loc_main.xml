@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="5dp"
+android:orientation="vertical"
+tools:context="james.kithu2.com.elocconverter.LocMainActivity">
+
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:text="Latitudes south of the equator are negative, and those north of the equator are positive.  Both are in the range 0-90." />
+
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:text="Longitudes west of the prime meridian are negative, and those east of the prime meridian are positive.  Both are in the range 0-180." />
+
+<View android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#000000" />
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp" >
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/etLatitude1"
+        android:layout_alignBottom="@+id/etLatitude1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Latitude:" />
+
+    <EditText android:id="@+id/etLatitude1"
+        android:textSize="16sp"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Decimal format" />
+
+    <Spinner android:id="@+id/spinLatitudeDir1"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@id/etLatitude1"
+        android:layout_alignBottom="@id/etLatitude1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/latitude_dir" />
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp" >
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/etLongitude1"
+        android:layout_alignBottom="@+id/etLongitude1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Longitude:" />
+
+    <EditText android:id="@+id/etLongitude1"
+        android:textSize="16sp"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Decimal format" />
+
+    <Spinner android:id="@+id/spinLongitudeDir1"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@id/etLongitude1"
+        android:layout_alignBottom="@id/etLongitude1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/longitude_dir" />
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Space android:layout_weight="0.15"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <ImageButton android:id="@+id/btnDown"
+        android:contentDescription="Convert from  decimal to DMS format"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/blue_background"
+        android:src="@drawable/down" />
+
+    <Space android:layout_weight="0.1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <ImageButton android:id="@+id/btnUp"
+        android:contentDescription="Convert from  DMS to decimal format"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/blue_background"
+        android:src="@drawable/up" />
+
+    <Space android:layout_weight="0.15"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp" >
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/etLatitude2"
+        android:layout_alignBottom="@+id/etLatitude2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Latitude:" />
+
+    <EditText android:id="@+id/etLatitude2"
+        android:textSize="16sp"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="DD:MM:SS.SS format" />
+
+    <Spinner android:id="@+id/spinLatitudeDir2"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/etLaitude2"
+        android:layout_alignBottom="@+id/etLaitude2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/latitude_dir" />
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp" >
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/etLongitude2"
+        android:layout_alignBottom="@+id/etLongitude2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Longitude:" />
+
+    <EditText android:id="@+id/etLongitude2"
+        android:textSize="16sp"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="DDD:MM:SS.SS format" />
+
+    <Spinner android:id="@+id/spinLongitudeDir2"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/etLongitude2"
+        android:layout_alignBottom="@+id/etLongitude2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/longitude_dir" />
+
+</LinearLayout>
+</LinearLayout>
+

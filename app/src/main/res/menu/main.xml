@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LocMainActivity">
+
+    <item android:id="@+id/action_my_location"
+        android:orderInCategory="100"
+        android:title="@string/my_location"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_map"
+        android:orderInCategory="105"
+        android:title="@string/map"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_help"
+        android:orderInCategory="110"
+        android:title="@string/help"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_about"
+        android:orderInCategory="115"
+        android:title="About"
+        app:showAsAction="never" />
+    <item android:id="@+id/logout"
+        android:orderInCategory="115"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>
