@@ -12,6 +12,9 @@
     <string name="email_label">Email</string>
     <string name="logout_label">Log Out</string>
 
+    <string name="facebook_app_id">111200779598012</string>
+    <string name="fb_login_protocol_scheme">fb111200779598012</string>
+
     <string name="google_maps_key">AIzaSyBn5ExLhB1CzIl-MAZuOV3b8p5looWLr7g</string>
 
     <string name="title_activity_main">E Loc Converter</string>

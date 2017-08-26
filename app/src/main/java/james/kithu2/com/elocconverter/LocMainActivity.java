@@ -25,6 +25,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.facebook.accountkit.AccountKit;
+import com.facebook.login.LoginManager;
 
 import java.util.Locale;
 
@@ -417,6 +418,8 @@ public class LocMainActivity extends AppCompatActivity implements View.OnClickLi
     public void onLogout() {
         // logout of Account Kit
         AccountKit.logOut();
+        //facebook logout
+        LoginManager.getInstance().logOut();
         launchLoginActivity();
     }
 
